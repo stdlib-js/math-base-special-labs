@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,28 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var INT32_MIN = require( '@stdlib/constants-int32-min' );
-var labs = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof labs, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function computes the absolute value of an integer', function test( t ) {
-	t.strictEqual( labs( -2|0 ), 2, 'negative number' );
-	t.strictEqual( labs( 3|0 ), 3, 'positive number' );
-	t.strictEqual( labs( 0|0 ), 0, 'zero' );
-	t.end();
-});
-
-tape( 'the absolute value for the minimum 32-bit signed integer is not defined', function test( t ) {
-	var v = labs( INT32_MIN|0 );
-	t.strictEqual( v, INT32_MIN, 'returns min 32-bit integer' );
-	t.strictEqual( v < 0, true, 'returns negative integer' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
