@@ -63,6 +63,11 @@ The [absolute value][absolute-value] is defined as
 ## Usage
 
 ```javascript
+import labs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-labs@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-labs/tags). For example,
+
+```javascript
 import labs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-labs@v0.2.0-deno/mod.js';
 ```
 
@@ -116,7 +121,7 @@ v = labs( 0|0 );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import labs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-labs@v0.2.0-deno/mod.js';
+import labs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-labs@deno/mod.js';
 
 var x;
 var i;
