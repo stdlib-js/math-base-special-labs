@@ -40,8 +40,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/math-base-napi-unary": "^0.2.3",
-    "@stdlib/utils-library-manifest": "^0.2.2"
+    "@stdlib/math-base-napi-unary": "^0.2.4",
+    "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/constants-int32-min": "^0.2.2",
@@ -87,82 +87,6 @@
     "32bit",
     "long"
   ],
-  "__stdlib__": {
-    "scaffold": {
-      "$schema": "math/base@v1.0",
-      "base_alias": "abs",
-      "alias": "labs",
-      "pkg_desc": "compute an absolute value of a signed 32-bit integer",
-      "desc": "computes an absolute value of a signed 32-bit integer",
-      "short_desc": "absolute value",
-      "parameters": [
-        {
-          "name": "x",
-          "desc": "input value",
-          "type": {
-            "javascript": "number",
-            "jsdoc": "integer",
-            "c": "int32_t",
-            "dtype": "int32"
-          },
-          "domain": [
-            {
-              "min": "-infinity",
-              "max": "infinity"
-            }
-          ],
-          "rand": {
-            "prng": "random/base/discrete-uniform",
-            "parameters": [
-              -10,
-              10
-            ]
-          },
-          "example_values": [
-            0,
-            -5,
-            2,
-            -10,
-            -1,
-            2,
-            3,
-            4,
-            9,
-            -16,
-            25,
-            -36,
-            -49,
-            64,
-            81,
-            100,
-            -99,
-            10,
-            -50,
-            98
-          ]
-        }
-      ],
-      "output_policy": "real_floating_point_and_generic",
-      "returns": {
-        "desc": "absolute value",
-        "type": {
-          "javascript": "number",
-          "jsdoc": "integer",
-          "c": "int32_t",
-          "dtype": "int32"
-        }
-      },
-      "keywords": [
-        "abs",
-        "labs",
-        "absolute",
-        "magnitude"
-      ],
-      "extra_keywords": [
-        "math.abs"
-      ]
-    }
-  },
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
